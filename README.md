@@ -1,6 +1,19 @@
 ﻿# AI Document Assistant
 
 [Live Demo](https://ai-doc-assistant-prakhar.streamlit.app)
+## Screenshots
+
+### Upload Screen
+![Upload Screen](assets/01-upload-screen.png.jpeg)
+
+### Document Workspace
+![Document Workspace](assets/02-document-workspace.png.jpeg)
+
+### Summary Generation
+![Summary Output](assets/03-summary-output.png.jpeg)
+
+### Document Question Answering
+![Question Answering](assets/04-question-answering.png.jpeg)
 
 AI Document Assistant is a Streamlit-based document intelligence application for PDFs and images. It supports document-grounded question answering, chat history recall, short/detailed/bullet summaries, and evidence-backed responses.
 
