@@ -35,12 +35,27 @@ AI Document Assistant is a Streamlit-based document intelligence application for
 ```text
 User uploads PDF/Image
         ↓
-Local document preview
+Streamlit file manager
+        - Validates supported file types
+        - Handles multi-file workspace
+        - Maintains selected document state
         ↓
-Gemini Files API upload
+Document preprocessing layer
+        - Extracts basic text/metadata where possible
+        - Supports PDF and image inputs
+        - Uses OCR fallback for image-based content
         ↓
-Gemini document understanding
+AI orchestration layer
+        - Builds task-specific prompts
+        - Handles Q&A, summaries, and follow-up questions
+        - Sends document context to Gemini Document Understanding
         ↓
-Question Answering / Summarization
+Response generation
+        - Produces document-grounded answers
+        - Generates short, detailed, and bullet summaries
+        - Maintains chat history for contextual follow-ups
         ↓
-Answer + Evidence display
+Evidence and UI layer
+        - Displays answer with supporting evidence
+        - Shows uploaded document workspace
+        - Supports summary download
